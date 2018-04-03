@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">SafHelper Sample</string>
+    <string name="write_file">Write file</string>
+</resources>
