@@ -65,8 +65,6 @@ override fun onActivityResult(requestCode: Int, resultCode: Int, resultData: Int
 
 ## License
 
-Copyright © 2017 Artem Bazhanov
+Copyright © 2018 Artem Bazhanov
 
-Ultra Debugger is provided under an Apache 2.0 License.
-
-Ultra Debugger uses [NanoHttpd](https://github.com/NanoHttpd/nanohttpd) to serve HTTP requests (NanoHttpd Copyright (c) 2012-2013 by Paul S. Hawke, 2001,2005-2013 by Jarno Elonen, 2010 by Konstantinos Togias All rights reserved).
+SafHelper is provided under an Apache 2.0 License.
