@@ -24,7 +24,10 @@ internal class PermissionHelper(context: Context, path: String) {
             val storagePath = Utils.findExternalStoragePath(context, path)
             if (storagePath != null) {
                 val (storageId1, relativePath1) = getStorageIdAndPath(p)
-                val (storageId2, relativePath2) = getStorageIdAndPath(storagePath, path)
+                var (storageId2, relativePath2) = getStorageIdAndPath(storagePath, path)
+                if (relativePath2.isEmpty()) {
+                    relativePath2 = File.separator
+                }
                 if (!storageId1.isEmpty() && storageId1 == storageId2 && relativePath2.startsWith(relativePath1)) {
                     permission = p
                     basePermittedPath = Utils.normalizePath(storagePath + File.separator + relativePath1)
